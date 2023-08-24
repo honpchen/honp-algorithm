@@ -63,7 +63,7 @@ public class ArrayStack<E> implements Stack<E>, Iterable<E> {
 
             @Override
             public boolean hasNext() {
-                return p != 0;
+                return p > 0;
             }
 
             @Override
@@ -71,16 +71,5 @@ public class ArrayStack<E> implements Stack<E>, Iterable<E> {
                 return data[--p];
             }
         };
-    }
-
-    private static class Node<E> {
-
-        E value;
-        Node<E> next;
-
-        public Node(E value, Node<E> next) {
-            this.value = value;
-            this.next = next;
-        }
     }
 }

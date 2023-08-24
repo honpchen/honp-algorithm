@@ -45,4 +45,10 @@ class ArrayStackTest {
         Assertions.assertNull(stack.pop());
     }
 
+    @Test
+    @DisplayName("逆波兰表示, L150 题")
+    void testEvalRPN() {
+        String[] tokens = new String[]{};
+    }
+
 }
